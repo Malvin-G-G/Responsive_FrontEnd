@@ -1,0 +1,178 @@
+/* ---- main ---- */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    color: #252a2e;
+}
+
+header {
+    padding: 25px;
+    text-align: center;
+    background: #364d64;
+    color: #ffffff;
+}
+
+nav {
+    padding: 10px;
+    text-align: center;
+    background: #2f577e;
+}
+
+nav a {
+    color: #ffffff;
+    margin: 0 10px;
+    text-decoration: none;
+    user-select: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    border-radius: 20px;
+    color: #84c7f0;
+    padding: 5px 10px;
+    background: rgba(0, 13, 255, 0.15);
+}
+
+.profile {
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.profile-pic {
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff;
+    border-top: 3px solid #106fae;
+    border-bottom: 3px solid #106fae;
+    width: 100%;
+    max-width: 700px;
+    padding: 30px;
+    gap: 20px;
+    line-height: 1.6;
+}
+
+.photo {
+    user-select: none;
+    flex-shrink: 0;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #106fae;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.info {
+    text-align: center;
+
+    width: 100%;
+}
+
+.name {
+    color: #106fae;
+    margin: 0 0 5px 0;
+}
+
+.program {
+    font-weight: bold;
+    margin: 0 0 10px 0;
+}
+
+.desc {
+    margin: 0 0 10px 0;
+}
+
+h3 {
+    padding-top: 10px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    color: #106fae;
+    text-align: center;
+}
+
+ul {
+    padding: 0;
+    list-style-position: inside;
+}
+
+.github-link {
+    user-select: none;
+    display: inline-block;
+    margin-top: 15px;
+    color: #106fae;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.github-link:hover {
+    user-select: none;
+    text-decoration: underline;
+}
+
+footer {
+    padding: 5px;
+    text-align: center;
+    background: #2f577e;
+    color: #ffffff;
+    font-size: 10px;
+}
+
+/* ---- Tablet ---- */
+@media (min-width: 576px) {
+    .photo {
+        width: 150px;
+        height: 150px;
+        font-size: 40px;
+    }
+
+    .profile-pic {
+        padding: 40px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+}
+
+/* ---- PC ---- */
+@media (min-width: 992px) {
+    .profile-pic {
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
+        padding: 50px;
+        gap: 40px;
+    }
+
+    .info {
+        text-align: left;
+    }
+
+    .name,
+    h3 {
+        text-align: left;
+    }
+
+    .photo {
+        width: 180px;
+        height: 180px;
+        font-size: 48px;
+    }
+
+    ul {
+        list-style-position: outside;
+        padding-left: 20px;
+    }
+}
